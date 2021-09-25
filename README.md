@@ -6,7 +6,7 @@ This is a Python script to perform the following:
   * cd ~/mycode
   * git add *
   * git commit -m "Some comment..."
-  * git push origin main
+  * git push origin
 * Incorporate the following command line arguments:
   * -c, --comment
 
