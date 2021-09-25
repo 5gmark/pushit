@@ -10,7 +10,7 @@ This is a Python script to perform the following:
 * Incorporate the following command line arguments:
   * -c, --comment
 
-    This will be the commit comment.
+    The commit comment.
   * -h, --help
   * -s, --symbolic-link
 
