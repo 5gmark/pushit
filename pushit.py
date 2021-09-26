@@ -2,17 +2,17 @@
 '''
    Date: September 21, 2021
    From: Mark Mollere, mmollere@alta3.com
-Subject: push_it.py
+Subject: pushit.py
      To: You
 
 push_it.py is a simple process to knock out a "git push" to GitHub. This code is
 imperfect. The intent is for you to gaze upon the building blocks and engage in
 critcal thinking for the next iteration...
 '''
-# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-import getopt
-import os
-import sys
+# Modules <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+import getopt # C-style parser for command line options.
+import os     # Portable way of using operating system dependent functionality.
+import sys    # System-specific parameters and functions.
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 def scan_for_arguments(git_comment):
   argumentList = sys.argv[1:]
