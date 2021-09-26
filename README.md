@@ -2,6 +2,10 @@
 Automating a git push with Python
 
 Python script to perform commands similar to the following:
+- [ ] Perform a system check for the third party Python library GitPython. If not present:
+  - [ ] Warning displayed to the screen.
+  - [ ] Prompt issued for installation.
+  * Note: One method of installation is: `pip3.8 install GitPython`.
 * Run four (4) Linux commands:
   - [x] `cd ~/mycode`
   - [x] `git add *`
