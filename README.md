@@ -9,10 +9,10 @@ This is a Python script to perform the following:
   * git push origin
 * Incorporate the following command line arguments:
   * -c, --comment
-
-    The commit comment.
+    * The commit comment.
   * -h, --help
+  * -m, --man-page
+    * Installs pushit man page.
   * -s, --symbolic-link
-
-    Creates a symbolic link from /usr/local/bin to pushit.
+    * Creates a symbolic link from /usr/local/bin to pushit.
   * -v, --version
