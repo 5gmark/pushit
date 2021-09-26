@@ -18,3 +18,9 @@ This is a Python script to perform the following:
   * -s, --symbolic-link
     * Creates a symbolic link from /usr/local/bin to pushit.
   * -v, --version
+
+Notes
+---
+* shebang:
+  * The primary environment for this script envokes Python with `python3`.
+  * Modify the shebang line, `#!/usr/bin/env python3`, and/or add symbolic links as needed to accommodate the target environment.
