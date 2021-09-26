@@ -11,7 +11,7 @@ critcal thinking for the next iteration...
 '''
 # Modules <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 import getopt        # C-style parser for command line options.
-from git import repo # Library used to interact with git repositories.
+import git           # Library used to interact with git repositories.
 import os            # Operating system dependent functionality.
 import sys           # System-specific parameters and functions.
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
@@ -42,15 +42,10 @@ def run_the_4_commands(git_comment):
       commit_message    = git_comment
     else:
       commit_message    = input('Commit Comment: ')
-    working_directory = '/home/student/mycode'
-    git_add           = 'git add *'
-    git_commit        = 'git commit -m "' + commit_message + '"'
-    git_push          = 'git push origin'
-
-    os.chdir(working_directory) # Command 1.
-    os.system(git_add)          # Command 2.
-    os.system(git_commit)       # Command 3.
-    os.system(git_push)         # Command 4.
+    repo=git.Repo('/home/student/mycode')
+    repo.git.add('*')
+    repo.git.commit(m=commit_message)
+    repo.git.push()
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 def main():
   run_the_4_commands(scan_for_arguments(""))
