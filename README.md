@@ -9,7 +9,9 @@ This is a Python script to perform the following:
   * git push origin
 * Incorporate the following command line arguments:
   * -c, --comment
+    * Optional.
     * The commit comment.
+    * If not used, "Commit Comment: " prompt runs.
   * -h, --help
   * -m, --man-page
     * Installs pushit man page.
