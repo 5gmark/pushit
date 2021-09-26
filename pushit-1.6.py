@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-
+#!/usr/bin/env python3
 '''
    Date: September 21, 2021
    From: Mark Mollere, mmollere@alta3.com
