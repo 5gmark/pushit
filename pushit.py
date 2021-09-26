@@ -14,7 +14,6 @@ import getopt        # C-style parser for command line options.
 from git import repo # Library used to interact with git repositories.
 import os            # Operating system dependent functionality.
 import sys           # System-specific parameters and functions.
-
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 def scan_for_arguments(git_comment):
   argumentList = sys.argv[1:]
