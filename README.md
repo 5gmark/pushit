@@ -3,21 +3,21 @@ Automating a git push with Python
 
 This is a Python script to perform the following:
 * Run four (4) Linux commands:
-  - [x] cd ~/mycode
-  - [x] git add *
-  - [x] git commit -m "Some comment..."
-  - [x] git push origin
+  - [x] `cd ~/mycode`
+  - [x] `git add *`
+  - [x] `git commit -m "Some comment..."`
+  - [x] `git push origin`
 * Incorporate the following command line arguments:
-  - [x] -c, --comment
+  - [x] `-c`, `--comment`
     * Optional.
     * The commit comment.
     * If not used, "Commit Comment: " prompt runs.
-  - [ ] -h, --help
-  - [ ] -m, --man-page
+  - [ ] `-h`, `--help`
+  - [ ] `-m`, `--man-page`
     * Installs pushit man page.
-  - [ ] -s, --symbolic-link
+  - [ ] `-s`, `--symbolic-link`
     * Creates a symbolic link from /usr/local/bin to pushit.
-  - [x] -v, --version
+  - [x] `-v`, `--version`
 
 Notes
 ---

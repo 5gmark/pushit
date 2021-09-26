@@ -14,11 +14,11 @@ import getopt
 import os
 import sys
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-def get_arguments(git_comment):
+def scan_for_arguments(git_comment):
   argumentList = sys.argv[1:]
   options      = "c:hmsv"
   long_options = ["comment","help","man-page","symbolic-link","version"]
-  version      = '1.6'
+  version      = '1.7'
   try:
     arguments, values = getopt.getopt(argumentList, options, long_options)
     for currentArgument, currentValue in arguments:
@@ -52,7 +52,7 @@ def run_the_4_commands(git_comment):
     os.system(git_push)         # Command 4.
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 def main():
-  run_the_4_commands(get_arguments(""))
+  run_the_4_commands(scan_for_arguments(""))
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 if __name__ == "__main__":
     main()
